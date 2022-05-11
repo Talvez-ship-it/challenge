@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/*zera as margens e define os estilos base do site*/
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-style: none;
+    letter-spacing: 0.2px;
+}
+
+/*estiliza a scrollbar*/
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #23A6F0;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+/*id para a brandname do site / diminui o espaço entre as letras*/
+#financial {
+    letter-spacing: 0.1px;
+}
+
+a {
+    color: currentColor
+}
+
+button {
+    cursor: pointer;
+}
+
+/*define o tamanho das tag's titulo e paragrafo*/
+h1 {
+    font-weight: 800;
+    font-size: 58px;
+    color: #252B42;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #252B42;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #737373;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*esconde o container do menu responsivo*/
+.container {
+    display: none;
+}
+
+input.hamburger-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+/*estiliza o a nav e o menu no header do site*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 9%;
+}
+
+.menu {
+    display: flex;
+    color: #737373;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu li {
+    transition: background-color, color 0.3s;
+}
+
+.menu li:hover {
+    color: black;
+}
+
+li {
+    margin: 0px 21px;
+}
+
+#login {
+    color: #23A6F0;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 45px;
+}
+
+#bam {
+    width: 220px 52px;
+    font-size: 14px;
+    background-color: #23A6F0;
+    color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    padding: 12px 23px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#bam span {
+    margin-right: 5px;
+}
+
+/*estiliza o main do site*/
+main {
+    display: flex;
+    margin: 9%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main div section {
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.space {
+    margin: 6% 0%;
+}
+
+/*cria os estilos de botao do site*/
+.btncircle {
+    background-color: #23A6F0;
+    color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    padding: 12px 23px;
+    font-weight: 700;
+    border-radius: 25px;
+    margin-right: 3%;
+}
+
+.btncircle-white {
+    background-color: #FAFAFA;
+    color: #23A6F0;
+    display: flex;
+    align-items: center;
+    padding: 12px 23px;
+    font-weight: 700;
+    border-radius: 25px;
+    margin-right: 3%;
+    border: 1px solid #23A6F0;
+}
+
+/*estiliza a segunda parte do site*/
+.part2 {
+    background-color: #FFFFFF;
+    padding: 10% 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part2 h2 {
+    text-align: center;
+    color: #252B42;
+}
+
+.part2 p {
+    text-align: center;
+    margin: 1%;
+    color: #737373;
+    width: 45%;
+}
+
+.part2 div {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin: 33.5px;
+    background-color: #FAFAFA;
+    color: #252B42;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 335px;
+    height: 135px;
+    justify-content: center;
+    letter-spacing: 0.1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    color: #FAFAFA;
+    background-color: #23A6F0;
+}
+
+/*estiliza a terceira parte do site*/
+.part3 {
+    padding: 8% 9%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part3 h2 {
+    text-align: center;
+    color: #252B42;
+}
+
+.part3 p {
+    margin: 1%;
+    text-align: center;
+    color: #737373;
+    width: 45%;
+}
+
+.part3 div {
+    display: flex;
+    justify-content: center;
+}
+
+/*cria o quadrado dos comentarios*/
+.coment {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 3% 2%;
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin: 33.5px;
+    width: 335px;
+}
+
+.coment:hover {
+    transform: scale(1.05);
+}
+
+/*posicionas as estrelas lado a lado com espaçamento*/
+.star {
+    display: flex;
+    margin-bottom: 8%;
+}
+
+.star svg {
+    margin-right: 1%;
+}
+
+/*alinha o perfil ao centro da linha ao lado da imagem*/
+.perfil {
+    display: flex;
+    align-items: center;
+    margin: 6% 0%;
+}
+
+.perfil img {
+    margin-right: 5%;
+}
+
+.perfil section h6 {
+    margin: 3% 0%;
+}
+
+.name {
+    color: #23A6F0;
+}
+
+/*alinha os itens do footer*/
+footer {
+    background-color: #252B42;
+    color: #FAFAFA;
+    padding: 4% 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div {
+    width: 40%;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+/*posiciona a aba de contato do footer e seu botao*/
+.contato input {
+    width: 180px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    font-size: 12px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    font-weight: 500;
+}
+
+.contato button {
+    background-color: #23A6F0;
+    color: #FAFAFA;
+    padding: 15px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 12px;
+    margin-left: -5px;
+}
+
+@media only screen and (max-width: 1015px) {
+    * {
+        margin: 0% 0%;
+        padding: 0% 0%;
+    }
+
+    /*esconde o nav do site*/
+    nav {
+        display: none;
+    }
+
+    /*coloca o block do menu acima da tela como position absolute e fit content*/
+    .container {
+        display: block;
+        width: 100%;
+        height: 45%;
+        background-color: #FAFAFA;
+        position: absolute;
+        transform: translateY(-125vw);
+        transition: 0.6s ease-in-out;
+        height: fit-content;
+    }
+
+    /*com o clique no icon hamburger traz o menu acima para a posição zero aparecendo ele na tela*/
+    #openmenu:checked~.container {
+        transform: translateY(0vw);
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 30px;
+        margin: 30% 0% 20% 0%;
+    }
+
+    .menu li {
+        margin-bottom: 10%;
+    }
+
+    #financial {
+        position: absolute;
+        left: 7%;
+        top: 10%;
+        font-size: 30px;
+    }
+
+    /*faz o menu hamburger*/
+    .hamburger-icon span {
+        height: 5px;
+        width: 35px;
+        background-color: #737373;
+        display: block;
+        margin: 5px 0px;
+        transition: 0.7s ease-in-out;
+        transform: none;
+    }
+
+    /*define o posicionamento do menu hamburger*/
+    .hamburger-icon {
+        position: absolute;
+        z-index: 1;
+        top: 6%;
+        right: 7%;
+        padding-bottom: 2vh;
+    }
+
+    /*com o clique(checked) no menu vira as duas primeiras span 45° formando o X*/
+    #openmenu:checked~.hamburger-icon span:nth-of-type(1) {
+        transform: translate(0%, 175%) rotate(-45deg);
+        background-color: #252B42;
+    }
+
+    #openmenu:checked~.hamburger-icon span:nth-of-type(2) {
+        transform: rotate(45deg);
+        background-color: #252B42;
+    }
+
+    /*a terceira span fica como opacidade 0*/
+    #openmenu:checked~.hamburger-icon span:nth-of-type(3) {
+        opacity: 0;
+    }
+
+    /*zera a opacidade do checkbox*/
+    input.hamburger-checkbox {
+        position: absolute;
+        opacity: 0;
+    }
+
+    /*estiliza o main,part2 e part3 do design como reponsivo*/
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    main div {
+        margin: 20% 0%;
+    }
+
+    main div section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div section button {
+        width: fit-content;
+        margin-bottom: 2%;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    .part2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .part2 h2 {
+        margin-bottom: 1%;
+    }
+
+    .part2 p {
+        width: fit-content;
+    }
+
+    .part2 div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part2 svg {
+        margin-bottom: 1%;
+    }
+
+    .card {
+        padding: 4% 0%;
+    }
+
+    .part3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .part3 div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .part3 p {
+        width: fit-content;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 150px;
+        justify-content: center;
+    }
+
+    footer div {
+        display: block;
+        width: auto;
+        margin: 2% 0%;
+    }
+
+    footer h2 {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    footer p {
+        display: none;
+    }
+
+    /*bloqueia o scroll horizontal*/
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
